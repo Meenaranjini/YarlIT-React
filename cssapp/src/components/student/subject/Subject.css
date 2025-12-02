@@ -1,0 +1,12 @@
+.card-subject{
+    display: flex;
+    align-items: center;
+    font-style: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 5px;
+}
+li{
+     padding: 5px;
+    font-size: larger;
+}
