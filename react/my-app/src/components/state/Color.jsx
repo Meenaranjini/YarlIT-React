@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 export default function Color() {
-    const [redcount, redsetCount] = useState(245);
-    const [greencount, greensetCount] = useState(23);
-    const [bluecount, bluesetCount] = useState(0);
+    const [redcount=0, redsetCount] = useState(0);
+    const [greencount=0, greensetCount] = useState(0);
+    const [bluecount=0, bluesetCount] = useState(0);
     const rhandlerIncrement = () => {
         redsetCount(
             (preState) => {
@@ -14,7 +14,7 @@ export default function Color() {
     const rhandlerDecrement = () => {
         redsetCount(
             (preState) => {
-                return preState - 10 <0 ? alert("Invalid ") :preState - 10;
+                return preState - 10 <0 ? alert("Invalid ") :preState - 10       ;
             }
         );
     }
@@ -22,14 +22,14 @@ export default function Color() {
     const ghandlerIncrement = () => {
         greensetCount(
             (preState) => {
-                return preState + 10 >255 ? alert("Invalid ") :preState + 10;
+                return preState + 10        >255 ? alert("Invalid ") :preState + 10       ;
             }
         );
     }
     const ghandlerDecrement = () => {
         greensetCount(
             (preState) => {
-                return preState - 10<0 ? alert("Invalid ") :preState - 10;
+                return preState - 10       <0 ? alert("Invalid ") :preState - 10       ;
             }
         );
     }
@@ -37,7 +37,7 @@ export default function Color() {
     const bhandlerIncrement = () => {
         bluesetCount(
             (preState) => {
-                return preState + 10  >255 ? alert("Invalid ") :preState + 10;
+                return preState + 10         >255 ? alert("Invalid ") :preState + 1;
             }
         );
     }
@@ -55,6 +55,7 @@ export default function Color() {
             <button>
                 <p>Red</p>
                 <p>
+                    <p>{redcount}</p>
                     <button onClick={rhandlerIncrement}>+</button>
                     <button onClick={rhandlerDecrement}>-</button>
                 </p>
@@ -62,6 +63,7 @@ export default function Color() {
             <button>
                 <p>Green</p>
                 <p>
+                    <p>{greencount}</p>
                     <button onClick={ghandlerIncrement}>+</button>
                     <button onClick={ghandlerDecrement}>-</button>
                 </p>
@@ -69,6 +71,7 @@ export default function Color() {
             <button>
                 <p>Blue</p>
                 <p>
+                    <p>{bluecount}</p>
                     <button onClick={bhandlerIncrement}>+</button>
                     <button onClick={bhandlerDecrement}>-</button>
                 </p>

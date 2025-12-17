@@ -10,12 +10,14 @@ i{
     font-style: oblique;
     font-size: larger;
 }
-h2{
+h3{
     text-align: center;
+    color: black;
 }
 .card-student{
     margin-left: 20px;
     padding: 10px;
+
 }
 hr{
     color: rgb(0, 0, 0);
