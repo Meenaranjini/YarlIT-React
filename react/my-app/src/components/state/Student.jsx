@@ -4,7 +4,7 @@ import '../student/Student.css';
 import Student from "../student/Student.jsx";
 
 export default function Students() {
-  const [students, setStudents] = useState(data);
+  const [students, setStudents] = useState(data); //----array destructuring---
   const[totalStudent,setTotalStudent]=useState(data.length);
   // const handlerdeleteall=()=>{
   //   setStudents([]);
@@ -52,9 +52,7 @@ export default function Students() {
       <button onClick={handlerresetall}>Reset</button> */}
       {students.map((student)=>{
         return (
-           
                 <Student id={student.id} name={student.name} age={student.age} grade={student.grade} />
-             
         )
       })}
     </div>
