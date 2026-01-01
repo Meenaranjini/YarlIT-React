@@ -12,6 +12,7 @@ import Userinputs from './components/Userinputs.jsx';
 import Users from './components/User.jsx';
 import UserDetails from './components/Userdetails.jsx';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import CreateStudent from './components/CreateStudent.jsx';
 function App() {
 
   return (
@@ -22,17 +23,17 @@ function App() {
     {/* <Githubusers /> */}
     {/* <Useeffect></Useeffect> */}
     {/* <Userinputs></Userinputs> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Users/>} />
+            <Route path="/" element={<Users/>}/>
             <Route path="/users/:id" element={<UserDetails/>} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <Users></Users> */}
       {/* <UserDetails></UserDetails> */}
+      <CreateStudent></CreateStudent>
 
    </div>
-
   )
 }
 
