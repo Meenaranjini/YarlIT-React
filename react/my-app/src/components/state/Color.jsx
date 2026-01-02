@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 export default function Color() {
-    const [redcount=0, redsetCount] = useState(0);
-    const [greencount=0, greensetCount] = useState(0);
-    const [bluecount=0, bluesetCount] = useState(0);
+    const [redcount, redsetCount] = useState(0);
+    const [greencount, greensetCount] = useState(0);
+    const [bluecount, bluesetCount] = useState(0);
     const rhandlerIncrement = () => {
         redsetCount(
             (preState) => {
@@ -76,8 +76,6 @@ export default function Color() {
                     <button onClick={bhandlerDecrement}>-</button>
                 </p>
             </button>
-
-
         </div>
     )
 }

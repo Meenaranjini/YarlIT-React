@@ -15,7 +15,7 @@ export default function Useeffect() {
     }
     useEffect(()=>{
         console.log("This is use Effect");
-    },[counter2]); // needed api call  rendering
+    },[]); // needed api call  rendering
     return (<div>
 
         <h1> counter1 {counter1}</h1>

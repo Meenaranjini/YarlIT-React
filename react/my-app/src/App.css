@@ -32,7 +32,7 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+/* 
 .card {
     align-items: center;
     font-style: inherit;
@@ -57,14 +57,15 @@ button:hover {
 /* .read-the-docs {
   color: #888;
 }
-div{
+  */
+/* div{
   height: 200px;
-} */
- body{
+}  */
+ /* body{
      display: flex;
-     /* background-color: #2e1081; */
+     /* background-color: #2e1081; 
 }
-.card{
+/* .card{
     border: 2px solid black;
     border-radius: 10px;
     width: 25%;
@@ -72,13 +73,13 @@ div{
     text-shadow: rgb(148, 140, 140);
     background-color:#F5EFFF;
     position: relative;
-}
+} */
 /* .card:hover{
     box-shadow: 10px 10px #9593cc;
     bottom: 5px;
     
 } */
-.container{
+/* .container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -86,6 +87,4 @@ div{
 h1{
     color: white;
     text-align: center;
-}
-
-
+}  */

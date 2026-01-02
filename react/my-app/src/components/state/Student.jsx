@@ -6,25 +6,25 @@ import Student from "../student/Student.jsx";
 export default function Students() {
   const [students, setStudents] = useState(data); //----array destructuring---
   const[totalStudent,setTotalStudent]=useState(data.length);
-  // const handlerdeleteall=()=>{
-  //   setStudents([]);
-  //   setTotalStudent(0);
-  // }
-  // const handlerresetall=()=>{
-  //   setStudents(data);
-  //   setTotalStudent(data.length);
-  // }
+  const handlerdeleteall=()=>{
+    setStudents([]);
+    setTotalStudent(0);
+  }
+  const handlerresetall=()=>{
+    setStudents(data);
+    setTotalStudent(data.length);
+  }
 
-  // const handlerdelete=(id)=>{
-  //   const filterStudent=students.filter((student)=>{
-  //     return (student.id!==id);
-  //   });
-  //   setStudents(filterStudent);
-  //   setTotalStudent(filterStudent.length);
-  // }
+  const handlerdelete=(id)=>{
+    const filterStudent=students.filter((student)=>{
+      return (student.id!==id);
+    });
+    setStudents(filterStudent);
+    setTotalStudent(filterStudent.length);
+  }
   return (
     <div>
-      {/* <h1>Student list {totalStudent}</h1>
+      <h1>Student list {totalStudent}</h1>
       <table border={3}>
         <tr>
           <th>ID</th>
@@ -33,7 +33,6 @@ export default function Students() {
           <th>Grade</th>
           <th>Delete</th>
         </tr>
-        
            {students.map((student) => {
             return(
               <tr>
@@ -49,12 +48,13 @@ export default function Students() {
           })}
       </table>
       <button onClick={handlerdeleteall}>Delete all</button>
-      <button onClick={handlerresetall}>Reset</button> */}
-      {students.map((student)=>{
+      <button onClick={handlerresetall}>Reset</button>
+
+      {/* {students.map((student)=>{
         return (
                 <Student id={student.id} name={student.name} age={student.age} grade={student.grade} />
         )
-      })}
+      })} */}
     </div>
   );
 }
