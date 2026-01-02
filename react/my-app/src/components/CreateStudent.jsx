@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 
 
 export default function CreateStudent() {
@@ -10,7 +10,7 @@ export default function CreateStudent() {
     return (
         <div>
             <h1>Create Student</h1>
-            <form action="">
+            <form>
                 <label htmlFor="fname">First Name</label>
                 <input type="text" id="fname"  value={firstName} onChange={(e)=>{
                         // handlerChangevalue(e);
