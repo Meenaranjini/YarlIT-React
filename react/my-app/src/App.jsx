@@ -23,15 +23,15 @@ function App() {
     {/* <Githubusers /> */}
     {/* <Useeffect></Useeffect> */}
     {/* <Userinputs></Userinputs> */}
-    {/* <BrowserRouter>
+    <BrowserRouter>
         <Routes>
             <Route path="/" element={<Users/>}/>
             <Route path="/users/:id" element={<UserDetails/>} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* <Users></Users> */}
       {/* <UserDetails></UserDetails> */}
-      <CreateStudent></CreateStudent>
+      {/* <CreateStudent></CreateStudent> */}
 
    </div>
   )
